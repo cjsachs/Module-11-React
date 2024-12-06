@@ -1,8 +1,18 @@
-# React + Vite
+# What is State?
+- Define state as a way to store and manage dynamic data in a React Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Why State Matters:
+- Drives the User Interface (Toggling a menu, form handling)
 
-Currently, two official plugins are available:
+# Key Characteristics of State:
+- Local to a component
+- Can trigger re-render when updated
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Basic Syntax
+const [state, setState] = useState(initialValue);
+
+# Updating State
+- Asynchronous (takes time)
+- Updating State with a static value: setState(newValue)
+- Updating State depending on the previous value: setState(prevState => prevState + 1)
+
