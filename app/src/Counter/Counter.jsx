@@ -1,15 +1,20 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const Counter = () => {
     // Hooks always at the top of component
     const [count, setCount] = useState(0)
     const [name, setName] = useState('christian')
 
-    let count2 = 0
-    console.log(count2)
+    console.log('1. Contructed')
+
+    useEffect(() => {
+      console.log('3. Mounted')
+    }, [])
+
   return (
     <>
         <div>
+            {console.log('2. Rendered')}
             <h1>Counter: {count}</h1>
             <button onClick={() => setCount(prevCount => prevCount + 1)}>Increment</button>
             <h1>Name: {name}</h1>

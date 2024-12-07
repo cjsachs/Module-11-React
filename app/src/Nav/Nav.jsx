@@ -1,6 +1,10 @@
-const Nav = () => {
+const Nav = ({name, age, location}) => {
   return (
-    <div>This is the Navbar</div>
+    <div>
+      <p>Hello, {name}</p>
+      <p>Age: {age}</p>
+      <p>Location: {location}</p>
+    </div>
   )
 }
 export default Nav

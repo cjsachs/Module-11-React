@@ -1,18 +1,11 @@
-# What is State?
-- Define state as a way to store and manage dynamic data in a React Component
-
-# Why State Matters:
-- Drives the User Interface (Toggling a menu, form handling)
-
-# Key Characteristics of State:
-- Local to a component
-- Can trigger re-render when updated
-
-# Basic Syntax
-const [state, setState] = useState(initialValue);
-
-# Updating State
-- Asynchronous (takes time)
-- Updating State with a static value: setState(newValue)
-- Updating State depending on the previous value: setState(prevState => prevState + 1)
-
+# What are Props?
+- Short for "properties", props are used to pass data from a parent component to a child component
+- Props are immutable within the child component
+# What is the Component Lifecycle?
+- The lifecycle of a React component from its creation to destruction
+Phases are:
+1. Contruction
+2. Render
+3. Mount
+4. Re-Render
+5. Un-Mounting
