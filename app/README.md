@@ -1,11 +1,7 @@
-# What are Props?
-- Short for "properties", props are used to pass data from a parent component to a child component
-- Props are immutable within the child component
-# What is the Component Lifecycle?
-- The lifecycle of a React component from its creation to destruction
-Phases are:
-1. Contruction
-2. Render
-3. Mount
-4. Re-Render
-5. Un-Mounting
+# The React useEffect Hook
+
+# useEffect runs at the mounting phase of the component lifecycle
+# Common Use Cases:
+1. Fetching data from an API
+2. Setting up subscriptions
+3. Manually updating the DOM

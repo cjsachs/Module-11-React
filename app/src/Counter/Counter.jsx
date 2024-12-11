@@ -9,7 +9,7 @@ const Counter = () => {
 
     useEffect(() => {
       console.log('3. Mounted')
-    }, [])
+    }, [count])
 
   return (
     <>
