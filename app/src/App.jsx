@@ -1,17 +1,11 @@
 import { useState } from "react"
-import Counter from "./Counter/Counter"
-import Nav from "./Nav/Nav"
-import PokemonList from "./PokemonList/PokemonList"
+import UserForm from "./UserForm/UserForm"
 
 const App = () => {
-  const [name, setName] = useState('christian')
   return (
     <div>
-      <Nav name={name} age={99} location={'USA'}/>
-      <h1>React</h1>
-      <h2>Learning about the useEffect Hook</h2>
-      <PokemonList/>
-      <Counter/>
+      <h2>Common Events: onClick, onChange, onSubmit. Form Handling</h2>
+      <UserForm/>
     </div>
   )
 }
