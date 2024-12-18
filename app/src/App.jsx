@@ -1,11 +1,15 @@
-import { useState } from "react"
-import UserForm from "./UserForm/UserForm"
+import CarouselComp from "./CarouselComp/CarouselComp"
+import Footer from "./Footer/Footer"
+import NavigationBar from "./NavigationBar/NavigationBar"
+import Trending from "./Trending/Trending"
 
 const App = () => {
   return (
     <div>
-      <h2>Common Events: onClick, onChange, onSubmit. Form Handling</h2>
-      <UserForm/>
+      <NavigationBar/>
+      <CarouselComp/>
+      <Trending/>
+      <Footer/>
     </div>
   )
 }
