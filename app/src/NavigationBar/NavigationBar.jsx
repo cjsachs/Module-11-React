@@ -1,4 +1,5 @@
 import { Container, Image, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { NavLink } from 'react-router';
 import './NavigationBar.css'
 
 const NavigationBar = () => {
@@ -11,8 +12,8 @@ const NavigationBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Profile</Nav.Link>
+              <Nav.Link as={NavLink} to='/'>Home</Nav.Link>
+              <Nav.Link as={NavLink} to="/profile">Profile</Nav.Link>
               <NavDropdown title="Account" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Watch List</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">

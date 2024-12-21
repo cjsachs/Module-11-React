@@ -1,16 +1,15 @@
-import CarouselComp from "./CarouselComp/CarouselComp"
-import Footer from "./Footer/Footer"
-import NavigationBar from "./NavigationBar/NavigationBar"
-import Trending from "./Trending/Trending"
+import { Route, Routes } from "react-router"
+import Home from "./Home/Home"
+import Profile from './Profile/Profile'
 
 const App = () => {
   return (
-    <div>
-      <NavigationBar/>
-      <CarouselComp/>
-      <Trending/>
-      <Footer/>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/profile" element={<Profile/>}/>
+      </Routes>
+    </>
   )
 }
 export default App
